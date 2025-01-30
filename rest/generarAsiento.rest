@@ -1,0 +1,12 @@
+### Crear Asiento
+POST http://localhost:3000/api/asientos
+Content-Type: application/json
+
+{
+    "fecha": "2024-11-01",
+    "descripcion": "Registro de venta",
+    "debe": 1500.00,
+    "haber": 1500.00,
+    "codigo_cuenta_debe": 1105,
+    "codigo_cuenta_haber": 1110
+}
