@@ -8,10 +8,9 @@ router.post('/', asientosController.crearAsiento);
 // Ruta para obtener todos los asientos
 router.get('/', asientosController.obtenerAsientos);
 
-// Ruta para modificar un asiento
-router.put('/modificar/:id', asientosController.modificarAsiento);
 
-// Ruta para eliminar un asiento
-router.delete('/eliminar/:id', asientosController.eliminarAsiento);
+// Agregar ruta para crear múltiples asientos
+router.post('/multiples', asientosController.crearMultiplesAsientos);
+
 
 module.exports = router;
