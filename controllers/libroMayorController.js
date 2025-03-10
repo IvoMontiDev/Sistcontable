@@ -14,7 +14,6 @@ const obtenerLibroMayor = async (req, res) => {
           day: '2-digit'
         })
       }));
-
       res.json(libroConFechaFormateada);
     } catch (error) {
       console.error('Error al obtener el libro mayor:', error);
